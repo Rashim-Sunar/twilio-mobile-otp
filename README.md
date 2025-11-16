@@ -79,18 +79,54 @@ cd twilio-mobile-otp
 ```bash
 npm install
 ```
+### **4. Create .env file in project root**
 
-## ** Usage **
-Run the project with:
 ```bash
-node server.js
+npm install
 ```
 
-## ** Testing **
+## Usage
+Run the project with:
+```bash
+TWILIO_ACCOUNT_SID=your_twilio_account_sid
+TWILIO_AUTH_TOKEN=your_twilio_auth_token
+TWILIO_PHONE_NUMBER=your_twilio_phone_number
+```
+
+## Testing
 twilio-mobile-otp uses Node.js for runtime and can be tested with:
 ```bash
 npm test
 ```
+<br><hr>
+## API Usage (Postman Guide)
+Below is how GitHub visitors can test your API instantly.
+### **1. Send OTP**
+POST
+```sh
+http://localhost:5000/send-otp
+```
+Body (JSON)
+```sh
+{
+  "phoneNumber": "+91XXXXXXXXXX"
+}
+```
+
+### **2. Verify OTP**
+POST
+```sh
+http://localhost:5000/verify-otp
+```
+
+Body (JSON)
+```sh
+{
+  "phoneNumber": "+91XXXXXXXXXX",
+  "otp": "123456"
+}
+```
+
 <br><hr>
 [🔼 Back to top](#TWILIO-MOBILE-OTP)
 
