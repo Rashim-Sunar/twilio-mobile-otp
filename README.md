@@ -80,13 +80,13 @@ cd twilio-mobile-otp
 npm install
 ```
 
-### ** Usage **
+## ** Usage **
 Run the project with:
 ```bash
 node server.js
 ```
 
-### ** Testing **
+## ** Testing **
 twilio-mobile-otp uses Node.js for runtime and can be tested with:
 ```bash
 npm test
